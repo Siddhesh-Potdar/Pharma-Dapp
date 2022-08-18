@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.picture {
+  height:35rem;
+  width: 100%;
+  margin:0 auto ;
+  background-image:url("C:\Users\Siddhesh\Desktop\PharmaDapp\web\frontend\client\src\hero_1.jpg");
+  -webkit-tap-highlight-color: transparent;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.heading {
+  color:#ffff;
+  font-size: 4rem;
+}
+
+.mainHeading {
+  transition: all 0.4s;
+  animation: moveInLeft 0.8s ease-out;
+}
+.secondaryHeading {
+  animation: moveInRight 0.8s ease-out;
+}
+.heading__secondary {
+  color: var(--color-card);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.unitDisplay{
+  color:#ffff;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.button-1{
+  color:black;
+  border-radius: 10px;
+  border: none;
+font-size: 1.5rem;
+}
+
+.input{
+  margin-bottom: 5px;
+}
